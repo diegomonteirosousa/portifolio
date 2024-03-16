@@ -161,12 +161,12 @@ table{
 }
 
 .UX{
-	width: 50%;
+	width: 80%;
 	animation: react 4s;
 }
 
 .php{
-	width: 50%;
+	width: 60%;
 	animation: php 4s;
 }
 
@@ -176,12 +176,20 @@ table{
 }
 
 .javascript{
-	width: 35%;
+	width: 45%;
 	animation: php 4s;
 }
 
+.indesign{
+
+	width: 90%;
+	animation: java 4s;
+
+
+}
+
 .figma{
-	width: 35%;
+	width: 85%;
 	animation: php 4s;
 }
 
@@ -191,21 +199,21 @@ table{
 }
 
 .designer{
-	width: 50%;
+	width: 80%;
 	animation: java 4s;
 }
 
 .xd{
-	width: 60%;
+	width: 80%;
 	animation: java 4s;
 }
 .premiere{
-	width: 70%;
+	width: 85%;
 	animation: java 4s;
 }
 
 .wordpress{
-	width: 70%;
+	width: 80%;
 	animation: java 4s;
 }
 
