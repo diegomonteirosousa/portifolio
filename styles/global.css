@@ -19,7 +19,6 @@ body{
 	/*background-color: rgba(219, 212, 212, 0.76);*/
 }
 
-
 .img-container {
     position: relative;
     display: inline-block;
@@ -39,5 +38,23 @@ body{
   }
 
 
+a.link{
+   
+   text-decoration: none;
+   color: white;
+
+}
+
+a.link:hover{
+   
+   border-bottom: 2px solid #E57373;
+
+}
 
 
+
+
+
+
+
+  
