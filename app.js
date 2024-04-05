@@ -62,3 +62,50 @@ function smoothScrollTo(endX, endY, duration) {
 
 
 
+// Função para obter a data atual no formato AAAA-MM-DD
+    function getCurrentDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      let month = now.getMonth() + 1;
+      let day = now.getDate();
+
+      // Adiciona zero à frente do mês/dia se forem menores que 10
+      month = month < 10 ? '0' + month : month;
+      day = day < 10 ? '0' + day : day;
+
+      return year + '-' + month + '-' + day;
+    }
+
+    // Função para atualizar o contador de visitas por dia
+    function updateVisitCount() {
+      const currentDate = getCurrentDate();
+      let visitCount = localStorage.getItem(currentDate);
+
+      // Se já houver uma visita registrada para hoje, incrementa o contador
+      if (visitCount) {
+        visitCount = parseInt(visitCount) + 1;
+      } else {
+        // Caso contrário, define o contador como 1
+        visitCount = 1;
+      }
+
+      // Armazena o contador atualizado no armazenamento local
+      localStorage.setItem(currentDate, visitCount);
+
+      // Atualiza o texto na página
+      document.getElementById('currentDate').textContent = currentDate;
+      document.getElementById('visitCount').textContent = "visitante número: " + visitCount;
+    }
+
+    // Chama a função para atualizar o contador de visitas ao carregar a página
+    updateVisitCount();
+
+
+
+VanillaTilt.init(document.querySelector(".teste-img"), {
+    max: 25,
+    speed: 400
+  });
+  
+  //It also supports NodeList
+  VanillaTilt.init(document.querySelectorAll(".teste-img"));

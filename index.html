@@ -271,7 +271,7 @@
 🛠️ <b>Principais Ferramentas e Tecnologias:</b>
 <br>
 <br>
-Adobe Creative Suite (Photoshop, Illustrator, indesign, Figma,  XD & Premiere)
+Adobe Creative Suite (Photoshop, Illustrator, indesign, Figma,  XD, After Efects & Premiere)
 WordPress (Desenvolvimento e Customização)
 HTML, CSS, JavaScript (Front-end Development)
 Ferramentas de prototipagem e wireframing entre outras
@@ -286,8 +286,15 @@ Ferramentas de prototipagem e wireframing entre outras
     <div class="area-sobre-img col-md-6  d-flex  align-items-center justify-content-center" data-aos="fade-up">
 
       <div class="text-center mt-4">
-        <img style="margin-top: 10%;" class="img-fluid rounded-circle img-sobremim d-none d-lg-block" src="img/diego.png" width="300px" alt="">
+
          
+                      <div class="img-flutuante">
+                        <img class="img-fluid d-none d-lg-block" id="img-flutuante" src="img/Preferida.jpg" alt="diego" width="250vh">
+                      </div>
+
+<!--
+        <img style="margin-top: 10%;" class="img-fluid rounded-circle img-sobremim d-none d-lg-block" src="img/diego.png" width="300px" alt="">
+         -->
 
         
       </div>
@@ -660,7 +667,35 @@ Ferramentas de prototipagem e wireframing entre outras
 
   <script>
     AOS.init();
+
+    VanillaTilt.init(document.querySelector(".teste-img"), {
+    max: 25,
+    speed: 400
+  });
+  
+  //It also supports NodeList
+  VanillaTilt.init(document.querySelectorAll(".teste-img"));
+
   </script>
+
+     <script src="javascript/Vanilla/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".item-projetos"), {
+        max: 25,
+        speed: 400,
+            glare: true,
+            "max-glare": 1,
+      });
+        VanillaTilt.init(document.querySelectorAll(".cards"), {
+        max: 25,
+        speed: 400,
+            glare: true
+      });
+        VanillaTilt.init(document.querySelectorAll(".img-flutuante"), {
+        max: 50,
+        speed: 5000,
+      });
+    </script>
 
 
   <script src="app.js"></script>
