@@ -151,7 +151,7 @@ table{
 
 
 .photoshop{
-	width: 80%;
+	width: 88%;
 	animation: javas 4s;
 }
 
@@ -218,6 +218,21 @@ table{
 }
 
 
+.canva{
+	width: 95%;
+	animation: canva 4s;
+}
+
+
+@keyframes canva{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 95%;
+	}
+}
 
 
 @keyframes html{
@@ -302,6 +317,16 @@ table{
 }
 
 @keyframes java{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes canva{
 	0%{
 		width: 0%;
 	}
