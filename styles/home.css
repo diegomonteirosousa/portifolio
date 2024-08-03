@@ -465,7 +465,21 @@ table{
 }
 
 
+@media (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
 
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 
 
