@@ -1,5 +1,126 @@
+#education {
+    width: 100%;
+    margin: 0 !important;
+    padding: 40px 15px !important;
+    box-sizing: border-box;
+}
 
+#education .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+#education .row {
+    width: 100%;
+    margin: 0;
+}
+
+.educacao-card {
+    background: #090a09;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 220px;
+    height: 100%;
+}
+
+.educacao-card .card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.educacao-icon {
+    color: #ed6a1d;
+    margin-bottom: 15px;
+}
+
+.instituicao-nome {
+    color: #ffffff;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    overflow-wrap: break-word;
+}
+
+.curso-nome {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 10px;
+    overflow-wrap: break-word;
+}
+
+.curso-ano {
+    color: #ed6a1d;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
+
+    #education {
+        padding: 30px 12px !important;
+    }
+
+    #education .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .educacao-card {
+        min-height: auto;
+    }
+
+    .educacao-card .card-body {
+        padding: 25px 20px;
+    }
+
+    .instituicao-nome {
+        font-size: 1.2rem;
+    }
+
+    .curso-nome {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #education {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    #education .container {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .educacao-card .card-body {
+        padding: 20px 16px;
+    }
+
+    .instituicao-nome {
+        font-size: 1.1rem;
+    }
+
+    .curso-nome {
+        font-size: 0.9rem;
+    }
+
+    .curso-ano {
+        font-size: 0.85rem;
+    }
+}
+
+        
+        
+        
         /* =========================================================
            ROOT
         ========================================================= */
@@ -20,6 +141,65 @@
 
             --radius: 18px;
         }
+
+        .certificados-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn-certificado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 140px;
+    height: 40px;
+
+    padding: 0 20px;
+
+    background: #ff6b00;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 4px;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.btn-certificado:hover {
+    background: #e85f00;
+    color: #fff;
+    transform: translateY(-2px);
+}
+3. Correção específica para celular
+@media (max-width: 576px) {
+
+    .certificados-botoes {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .btn-certificado {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
+        height: 42px;
+        font-size: 12px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
 
 
         /* =========================================================
