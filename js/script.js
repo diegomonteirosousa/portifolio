@@ -429,3 +429,28 @@
 
     });
 
+
+
+/* =========================
+   BOX DO PROJETO CLICÁVEL
+   Clicar em qualquer parte do box abre o link do botão
+========================= */
+
+document.querySelectorAll(".project").forEach(project => {
+
+    const link = project.querySelector("a.btn-main[href]");
+
+    if (!link) return;
+
+    project.style.cursor = "pointer";
+
+    project.addEventListener("click", event => {
+
+        // o próprio link já abre sozinho
+        if (event.target.closest("a")) return;
+
+        window.open(link.href, link.target || "_self", "noopener");
+
+    });
+
+});
