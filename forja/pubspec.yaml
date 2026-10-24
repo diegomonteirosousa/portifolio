@@ -1,0 +1,58 @@
+name: forja_fit
+description: Forja - app de treino, corrida e nutrição sem login. Dados salvos no próprio aparelho.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: '>=3.32.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Armazenamento local (sem login, sem servidor)
+  shared_preferences: ^2.3.2
+  # GPS para o cronômetro de corrida
+  geolocator: ^13.0.1
+  # Mantém a tela acesa durante treino e corrida
+  wakelock_plus: ^1.2.8
+  # Lembretes e notificações locais
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  # Geram o ícone e a tela de abertura nativa (rodados pelo tool/setup.dart)
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/splash/
+
+# Ícone do app: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false # foco no Google Play; mude para true se for gerar iOS
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#C6F432"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+
+# Tela de abertura nativa: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#0E0F11"
+  image: assets/splash/splash_logo.png
+  branding: assets/splash/branding.png
+  branding_mode: bottom
+  android_12:
+    color: "#0E0F11"
+    image: assets/splash/splash_android12.png
+    branding: assets/splash/branding.png
+  android: true
+  ios: false
+  web: false

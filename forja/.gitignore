@@ -1,0 +1,19 @@
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+.vscode/
+pubspec.lock
+android/.gradle/
+android/local.properties
+ios/Pods/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+# Chave de upload do Google Play (NUNCA envie para o Git)
+android/key.properties
+*.jks
+*.keystore
